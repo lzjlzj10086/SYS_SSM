@@ -18,6 +18,7 @@ public class ProductController {
     @RequestMapping("/findAll")
     public ModelAndView findAll(){
         ModelAndView modelAndView = new ModelAndView();
+        System.out.println(33);
         List<Product> products = productService.findAll();
         modelAndView.addObject("productlist",products);
         modelAndView.setViewName("productlist");
