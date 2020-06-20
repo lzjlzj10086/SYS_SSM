@@ -17,4 +17,7 @@ public class ProductService {
     public List<Product> findAll(){
         return productDao.findAll();
     }
+    public int save(Product product){
+        return  productDao.save(product);
+    }
 }

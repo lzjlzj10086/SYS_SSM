@@ -11,6 +11,7 @@
     <title>首页</title>
 </head>
 <body>
-<a href="product/findAll">findAll</a>
+<a href="pages/main.jsp">main</a>
+
 </body>
 </html>

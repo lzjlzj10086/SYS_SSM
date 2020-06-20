@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface ProductDao {
 
-    @Select("SELECT *from product")
+
     List<Product> findAll();
+
+    int save(Product product);
 }

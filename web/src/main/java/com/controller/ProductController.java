@@ -24,4 +24,12 @@ public class ProductController {
         modelAndView.setViewName("productlist");
         return modelAndView;
     }
+    @RequestMapping("/save")
+    public String save(Product product){
+        int count = productService.save(product);
+        if(count == 0 ){
+            return "";
+        }
+        return "redirect:/product/findAll";
+    }
 }
